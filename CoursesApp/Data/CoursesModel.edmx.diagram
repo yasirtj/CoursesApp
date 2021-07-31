@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b911dcf7c6f8413f860b50a083b81608" Name="Diagram1">
+        <EntityTypeShape EntityType="CoursesDBEntites.Admin" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Category" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Course" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Course_Lessons" Width="1.5" PointX="7.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Course_Units" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Trainee" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Trainee_Courses" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.Trainer" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesDBEntites.User" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Category_Category_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Course_Category_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Course_Trainer_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Course_Units_Course_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Trainee_Courses_Course_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Course_Lessons_Unit_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesDBEntites.FK_Trainee_Courses_Trainee_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
